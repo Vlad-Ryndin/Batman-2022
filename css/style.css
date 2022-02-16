@@ -177,6 +177,7 @@ h6 {
     height: 10rem;
     border-radius: 50%;
     background-color: #151515;
+    user-select: none;
 }
 
 .main__button-dark img {
@@ -196,6 +197,7 @@ h6 {
     color: #ffffff;
     background-color: #151515;
     border-radius: 8px;
+    user-select: none;
 }
 
 .main__button:hover {
@@ -214,6 +216,7 @@ h6 {
     height: 10.5rem;
     border-radius: .8rem;
     overflow: hidden;
+    user-select: none;
 }
 
 .main-slider__slide span {
