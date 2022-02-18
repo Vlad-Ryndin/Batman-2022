@@ -44,6 +44,11 @@ h6 {
     padding: 0;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /*сетка*/
@@ -185,6 +190,10 @@ h6 {
     opacity: 0.5;
 }
 
+.header__socials {
+    display: flex;
+}
+
 .header__socials-icon {
     width: 1.7rem;
     height: 1.6rem;
@@ -278,6 +287,8 @@ h6 {
 
 .main__button-dark img {
     margin-left: 1rem;
+    width: 3.5rem;
+    height: 4rem;
 }
 
 .main__button {
@@ -376,4 +387,8 @@ h6 {
 
 .footer__menu li:not(:last-child) {
     margin-right: 2.5rem;
+}
+
+ul {
+    margin: 0;
 }
