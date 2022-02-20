@@ -44,14 +44,22 @@ h6 {
     padding: 0;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
 }
 
+.burger__menu {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    width: 6rem;
+    height: 6rem;
+}
 
 
 /*сетка*/
+
 @media (max-width: 108em) {
     html {
         font-size: 9px;
@@ -94,17 +102,17 @@ img{
     }
 }
 
+@media (min-width: 48.5em) {
+    .header__menu-close,
+    .burger__menu {
+        display: none;
+    }
+}
+
 @media (max-width: 64em) {
     html {
         font-size: 5.5px;
     }
-}
-
-@media (max-width: 48em) {
-    html {
-        font-size: 10px;
-    }
-
 }
 
 @media (max-width: 44em) {
@@ -143,6 +151,7 @@ img{
     }
 }
 
+
 /*сетка*/
 
 .container {
@@ -160,7 +169,7 @@ img{
 
 .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -192,6 +201,7 @@ img{
 
 .header__socials {
     display: flex;
+    margin-left: 61%;
 }
 
 .header__socials-icon {
@@ -352,8 +362,8 @@ img{
 .footer {
     background-color: #151515;
     color: #ffffff;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
 }
 
 .footer .container {
@@ -391,4 +401,89 @@ img{
 
 ul {
     margin: 0;
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: 10px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .header {
+        width: 69.4%;
+        background-color: #151515;
+        top: 0;
+        left: 0;
+        transform: translate(44%, 0);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        display: none;
+    }
+    .header .container,
+    .header__logo,
+    .header__nav,
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__logo {
+        order: 1;
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+    }
+    .header__menu {
+        order: 3;
+    }
+    .header__menu .header__nav a {
+        margin-right: 0;
+    }
+    .header__menu .header__nav a:not(:last-child) {
+        margin-bottom: 1.7rem;
+    }
+    .header__socials {
+        margin-left: 0;
+        margin-bottom: 2.2rem;
+        order: 2;
+    }
+    .header__menu-close {
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    .main__description-wrap {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .main__button {
+        margin-bottom: 4.4rem;
+    }
+    .main__button-play {
+        margin-left: 45%;
+        margin-bottom: 3rem;
+    }
+    .main-slider__arrow {
+        display: none;
+    }
+    .main-slider__wrap {
+        max-width: 53.5%;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+    .main {
+        background-position-x: 62%;
+    }
+    .burger__menu {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 0%;
+        width: 6rem;
+        height: 6rem;
+    }
 }
