@@ -19,6 +19,7 @@ let burger = document.querySelector('.burger__menu');
 let closeMenu = document.querySelector('.header__menu-close')
 let menuMobile = document.querySelector('.header')
 
+
 burger.addEventListener('click', () => {
     menuMobile.style.display = 'block';
     burger.style.display = 'none';

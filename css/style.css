@@ -64,36 +64,42 @@ img {
     html {
         font-size: 9px;
     }
+    
 }
 
 @media (max-width: 105em) {
     html {
         font-size: 8.75px;
     }
+    
 }
 
 @media (max-width: 91.5em) {
     html {
         font-size: 7.9px;
     }
+    
 }
 
 @media (max-width: 91em) {
     html {
         font-size: 8.4px;
     }
+    
 }
 
 @media (max-width: 90em) {
     html {
         font-size: 7.9px;
     }
+    
 }
 
 @media (max-width: 80em) {
     html {
         font-size: 7.2px
     }
+    
 }
 
 @media (max-width: 72em) {
@@ -102,10 +108,13 @@ img {
     }
 }
 
-@media (min-width: 48.5em) {
+@media (min-width: 48em)  {
     .header__menu-close,
     .burger__menu {
-        display: none;
+        display: none !important; 
+    }
+    .header {
+        display: block !important;
     }
 }
 
@@ -454,6 +463,7 @@ ul {
         top: 4rem;
         width: 2.3rem;
         height: 2.3rem;
+        cursor: pointer;
     }
     .main__description-wrap {
         flex-direction: column;
@@ -485,5 +495,6 @@ ul {
         top: 0%;
         width: 6rem;
         height: 6rem;
+        cursor: pointer;
     }
 }
